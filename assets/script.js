@@ -1,3 +1,4 @@
+AOS.init();
 $(document).ready(function () {
     var owl = $(".products .owl-carousel").owlCarousel({
         loop: true,
