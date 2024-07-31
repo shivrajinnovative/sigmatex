@@ -21,6 +21,9 @@ body{
 .bg-secondary{
     background-color: var(--gray-color) !important;
 }
+.bg-pink{
+    background-color: #FFEDEA !important;
+}
 .text-danger{
     color: var(--primary-color) !important;
 }
@@ -359,3 +362,17 @@ form label{
     transform: scale(.85) translateY(-.8rem) translateX(.15rem);
 }
 
+
+
+
+.productDetail{
+    border: 1px solid grey;
+    padding: 20px;
+    margin: 10px;
+}
+
+.productDetail img{
+    height: 180px;
+    width: 250px;
+    object-fit: contain;
+}
