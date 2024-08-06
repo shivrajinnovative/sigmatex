@@ -269,8 +269,10 @@ figure img{
 .products img{
     height: 300px;
     width: 300px !important;
-    margin: auto;
+    margin:20px auto;
     transition: all 0.5s;
+    border-radius: 0 30px;
+    box-shadow: 0 0 10px -5px #FF6042;
 }
 .products img:hover{
     transform: scale(1.05);
@@ -466,4 +468,16 @@ form label{
         width: 45%;
         margin: 20px 2.5%;
     }   
+}
+
+.ducts b{
+    color: var(--primary-color);
+}
+
+.fa-square-whatsapp{
+    background-color: white;
+font-size: 40px;
+height: 30px;
+width: 30px;
+line-height: 30px;
 }
