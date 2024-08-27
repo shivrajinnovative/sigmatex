@@ -140,14 +140,24 @@ figure img{
     --bs-dropdown-link-hover-color:white ;
    
 }
-@media(max-width:768px){
-    .border-md-end{
-        border-right:none;
-    }
+@media(max-width:1024px){
     .navbar-brand figure{
         height:180px;
         border-radius: 0 0  80px 0 ;
     } 
+    figure img{
+        width: 160px;
+        height: 50px;
+        bottom: 30px;
+    }
+    .nav-link{
+        padding: 10px !important;
+    }
+}
+@media(max-width:768px){
+    .border-md-end{
+        border-right:none;
+    }
     figure img{
         width: 120px;
         height: 40px;
@@ -177,7 +187,19 @@ figure img{
         right: 18px;
     }
 }
-
+.carousel-item{
+    position: relative;
+}
+.carousel-item::before{
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left:0
+}
 
 .carousel-caption{
     top: 50%;
@@ -359,7 +381,8 @@ color: var(--primary-color) !important;
 /* ///////////////////// dynamic ///////////////////////////// */
 header.header{
     background-image: url('./images/bg/banner.jpg');
-    background-size:100% 100% ;
+    background-size:cover;
+    background-position:right center;
 }
 header.header p{
 position: relative;

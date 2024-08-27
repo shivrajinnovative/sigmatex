@@ -16,9 +16,6 @@ $(document).ready(function () {
             1000: {
                 items: 3
             },
-            1400: {
-                items: 4
-            },
         }
     });
     $(".products .custom-prev").click(function () {
