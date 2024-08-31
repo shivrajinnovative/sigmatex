@@ -473,24 +473,37 @@ form label{
 
 /* //////////////////////// clients //////////////////////// */
 .clientList div{
-    width: 20%;
-    margin: 20px 2.5%;
+    width: 16%;
+    height: 180px;
+    margin: 20px 2%;
     border: 1px solid var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;   
+    overflow: hidden;
 }
 .clientList img{
-    width: 90%;
+    width: 100%;
     /* height: 15   0px; */
     object-fit: contain;
+}
+
+@media (width<=768px){
+    .clientList div{
+        width: 45%;
+        margin: 20px 2.5%;
+    }   
+    .clientList img{
+        width: 70%;
+    }   
 }
 
 @media (max-width:500px){
     .clientList div{
         width: 45%;
         margin: 20px 2.5%;
-    }   
+        height: 100px;
+    }  
 }
 
 .ducts b{
